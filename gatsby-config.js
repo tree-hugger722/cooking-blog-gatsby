@@ -1,14 +1,15 @@
 module.exports = {
+  pathPrefix: "/cooking-blog-gatsby",
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Taste of CLE`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Emma Neil`,
+      summary: `who has spent quarantine cooking and coding in Shaker Heights`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A cooking blog.`,
+    siteUrl: `https://emma-neil.github.io/cooking-blog-gatsby/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `eneil722`,
     },
   },
   plugins: [
