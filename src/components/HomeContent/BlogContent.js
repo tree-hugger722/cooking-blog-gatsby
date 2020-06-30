@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"
 
-import BlogHeader from "./BlogHeader";
-import BlogEntry from "./BlogEntry";
+import BlogHeader from "./BlogHeader"
+import BlogEntry from "./BlogEntry"
 
-import "./HomeContent.css";
+import "./HomeContent.css"
 
 const BlogContent = () => {
   return (
@@ -13,9 +13,9 @@ const BlogContent = () => {
         author="Emma Neil"
         date="06/24/2020"
       />
-      <BlogEntry text="this is our first blog post" />
+      <BlogEntry>This is our first blog entry!</BlogEntry>
     </div>
-  );
-};
+  )
+}
 
-export default BlogContent;
+export default BlogContent

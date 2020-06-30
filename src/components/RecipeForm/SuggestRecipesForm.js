@@ -1,13 +1,13 @@
-import React from "react";
+import React from "react"
 
-import FormElement from "./FormElement";
+import FormElement from "./FormElement"
 
-import "./RecipeForm.css";
+import "./RecipeForm.css"
 
 const SuggestRecipesForm = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
+  const handleSubmit = event => {
+    event.preventDefault()
+  }
 
   return (
     <form className="form" onSubmit={handleSubmit}>
@@ -16,7 +16,7 @@ const SuggestRecipesForm = () => {
       <FormElement name="Recipe:" />
       <input className="submit" type="submit" value="Submit" />
     </form>
-  );
-};
+  )
+}
 
-export default SuggestRecipesForm;
+export default SuggestRecipesForm

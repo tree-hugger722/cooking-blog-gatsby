@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import "./HomeContent.css";
+import "./HomeContent.css"
 
 const BlogHeader = ({ title, date, author }) => {
   return (
@@ -11,7 +11,7 @@ const BlogHeader = ({ title, date, author }) => {
         <p id="author">{author}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BlogHeader;
+export default BlogHeader

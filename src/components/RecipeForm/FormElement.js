@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
-import "./RecipeForm.css";
+import "./RecipeForm.css"
 
 const FormElement = ({ name }) => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState("")
 
   return (
     <label className="form-element">
@@ -11,10 +11,10 @@ const FormElement = ({ name }) => {
       <input
         type="text"
         value={value}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={e => setValue(e.target.value)}
       />
     </label>
-  );
-};
+  )
+}
 
-export default FormElement;
+export default FormElement

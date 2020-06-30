@@ -16,23 +16,23 @@ const AboutUs = () => {
         <img
           className="about-image-individual"
           src={myriamAndEmma}
-          alt="myriamAndEmma"
+          alt="Myriam and Emma after a bike ride"
         />
         <img
           className="about-image-individual"
           src={gardenImage}
-          alt="gardenImage"
+          alt="Early image of the garden"
         />
         <img
           className="about-image-individual"
           src={emmaCooking}
-          alt="emmaCooking"
+          alt="Emma cooking"
         />
         <img className="about-image-individual" src={noodles} alt="noodles" />
         <img
           className="about-image-individual"
           src={myriamGardening}
-          alt="myriamGardening"
+          alt="Myriam in the garden"
         />
       </div>
 

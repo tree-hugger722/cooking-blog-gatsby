@@ -1,15 +1,17 @@
-import React from "react";
+import React from "react"
 
-import "./Header.css";
+import Link from "gatsby"
+
+import "./Header.css"
 
 const Title = () => {
   return (
     <h1 id="site-title">
-      <a id="title" href="../App.js">
+      <Link id="title" to="/">
         Taste of CLE
-      </a>
+      </Link>
     </h1>
-  );
-};
+  )
+}
 
-export default Title;
+export default Title

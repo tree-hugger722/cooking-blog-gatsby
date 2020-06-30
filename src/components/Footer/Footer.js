@@ -7,7 +7,10 @@ const Footer = () => {
     <div>
       <footer>
         <div>
-          <p id="footer-text">Copyright (c) 2020 Emma Neil</p>
+          <p>
+            © 2020 Emma Neil, Built with{" "}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </p>
         </div>
       </footer>
     </div>

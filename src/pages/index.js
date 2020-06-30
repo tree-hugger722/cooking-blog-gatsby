@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import SuggestRecipesPage from "./SuggestRecipesPage"
 import { rhythm } from "../utils/typography"
 
 import "./styles.css"
