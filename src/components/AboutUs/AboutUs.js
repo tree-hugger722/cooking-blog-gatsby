@@ -1,6 +1,7 @@
 import React from "react"
 
 import { Link } from "gatsby"
+
 import myriamAndEmma from "../../Images/myriam-and-emma.jpg"
 import gardenImage from "../../Images/garden-image.jpg"
 import emmaCooking from "../../Images/emma-cooking.jpg"

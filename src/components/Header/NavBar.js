@@ -8,13 +8,13 @@ const NavBar = () => {
   return (
     <div>
       <nav id="nav-bar">
-        <NavTab className="nav-tab" To="/" Name="Home" />
+        <NavTab className="nav-tab" to="/" name="Home" />
         <NavTab
           className="nav-tab"
-          To="/suggest-recipes"
-          Name="Suggest Recipes"
+          to="/suggest-recipes"
+          name="Suggest Recipes"
         />
-        <NavTab className="nav-tab" To="/about-us" Name="About Us" />
+        <NavTab className="nav-tab" to="/about-us" name="About Us" />
       </nav>
     </div>
   )

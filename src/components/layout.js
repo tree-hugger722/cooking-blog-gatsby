@@ -1,55 +1,27 @@
 import React from "react"
+
 import Header from "./Header/Header"
 
 import { rhythm, scale } from "../utils/typography"
+import MainPhoto from "./HomeContent/MainPhoto"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
-  // if (location.pathname === rootPath) {
-  //   header = (
-  //     <h1
-  //       style={{
-  //         ...scale(1.5),
-  //         marginBottom: rhythm(1.5),
-  //         marginTop: 0,
-  //       }}
-  //     >
-  //       <Link
-  //         style={{
-  //           boxShadow: `none`,
-  //           color: `inherit`,
-  //         }}
-  //         to={`/`}
-  //       >
-  //         {title}
-  //       </Link>
-  //     </h1>
-  //   )
-  // } else {
-  //   header = (
-  //     <h3
-  //       style={{
-  //         fontFamily: `Montserrat, sans-serif`,
-  //         marginTop: 0,
-  //       }}
-  //     >
-  //       <Link
-  //         style={{
-  //           boxShadow: `none`,
-  //           color: `inherit`,
-  //         }}
-  //         to={`/`}
-  //       >
-  //         {title}
-  //       </Link>
-  //     </h3>
-  //   )
-  // }
+  if (location.pathname === rootPath) {
+    header = (
+      <div>
+        <Header />
+        <MainPhoto />
+      </div>
+    )
+  } else {
+    header = <Header />
+  }
   return (
     <div>
-      <Header />
+      header
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()} Emma Neil, Built with
