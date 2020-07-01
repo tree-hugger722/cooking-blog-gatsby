@@ -5,11 +5,11 @@ import Header from "./Header/Header"
 import { rhythm, scale } from "../utils/typography"
 import MainPhoto from "./HomeContent/MainPhoto"
 
-const Layout = ({ location, children }) => {
+const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
-  if (location.pathname === rootPath) {
+  if ({ location }.pathname === rootPath) {
     header = (
       <div>
         <Header />
@@ -17,11 +17,15 @@ const Layout = ({ location, children }) => {
       </div>
     )
   } else {
-    header = <Header />
+    header = (
+      <div>
+        <Header />
+      </div>
+    )
   }
   return (
     <div>
-      header
+      <header>{header}</header>
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()} Emma Neil, Built with
