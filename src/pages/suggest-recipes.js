@@ -5,7 +5,7 @@ import RecipeForm from "../components/RecipeForm"
 
 import "../components/RecipeForm/RecipeForm.css"
 
-const SuggestRecipesPage = () => {
+const SuggestRecipesPage = ({ location }) => {
   return (
     <Layout className="site-text" location={location}>
       <h2>Suggest Recipes</h2>

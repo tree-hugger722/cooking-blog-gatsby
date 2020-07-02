@@ -22,7 +22,7 @@ const AboutUs = () => {
         <img
           className="about-image-individual"
           src={gardenImage}
-          alt="Early image of the garden"
+          alt="Early garden plot"
         />
         <img
           className="about-image-individual"
