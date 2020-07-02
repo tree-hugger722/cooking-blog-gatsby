@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
 import "./styles.css"
-import MainPhoto from "../components/HomeContent/MainPhoto"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title

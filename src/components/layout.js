@@ -2,38 +2,29 @@ import React from "react"
 
 import Header from "./Header/Header"
 
-import { rhythm, scale } from "../utils/typography"
+import Footer from "./Footer/Footer"
 import MainPhoto from "./HomeContent/MainPhoto"
+import PropTypes from "react"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
-  if ({ location }.pathname === rootPath) {
-    header = (
-      <div>
-        <Header />
-        <MainPhoto />
-      </div>
-    )
-  } else {
-    header = (
-      <div>
-        <Header />
-      </div>
-    )
-  }
   return (
     <div>
-      <header>{header}</header>
+      <header>
+        <Header />
+        {location.pathname === rootPath && <MainPhoto />}
+      </header>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()} Emma Neil, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <Footer />
     </div>
   )
+}
+
+Layout.propTypes = {
+  location: PropTypes.object.isRequired,
+  children: PropTypes.object,
 }
 
 export default Layout

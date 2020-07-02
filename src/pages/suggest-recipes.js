@@ -7,7 +7,7 @@ import "../components/RecipeForm/RecipeForm.css"
 
 const SuggestRecipesPage = () => {
   return (
-    <Layout className="site-text ">
+    <Layout className="site-text" location={location}>
       <h2>Suggest Recipes</h2>
       <p>
         We welcome any and all recipe suggestions! Just fill out the following
