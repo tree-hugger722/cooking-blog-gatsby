@@ -17,14 +17,13 @@
 #site-title {
   font-family: "Fredericka the Great", cursive;
   font-size: 70px;
-  color: black;
   padding: 10px 70px;
 }
 
 #title {
-  text-decoration: none;
-  color: black;
   font-weight: normal;
+  color: black;
+  box-shadow: none;
 }
 
 #nav-bar {
@@ -40,15 +39,11 @@
   color: black;
 }
 
-.nav-tab {
-  text-decoration: none;
-  color: black;
-}
-
 .nav-tab-text {
   font-family: "Nunito", sans-serif;
   padding-left: 10px;
-  text-decoration: none;
+  color: black;
+  box-shadow: none;
 }
 
 @media (max-width: 1118px) {

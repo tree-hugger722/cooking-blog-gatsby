@@ -25,9 +25,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
-
-        <Bio className="blog-post-bio" />
       </article>
+      <Bio className="blog-post-bio" />
 
       <nav>
         <ul className="return-to-page">

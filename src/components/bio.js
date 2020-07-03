@@ -54,7 +54,7 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
+      <p className="site-text">
         This website was programmed by <strong>{author.name}</strong>{" "}
         {author.summary}
         {`. `}
