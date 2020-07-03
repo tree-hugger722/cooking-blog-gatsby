@@ -11,6 +11,8 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
+import "./bio.css"
+
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
@@ -37,13 +39,9 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
+    <div className="bio">
       <Image
+        className="bio-image"
         fixed={data.avatar.childImageSharp.fixed}
         alt={author.name}
         style={{
@@ -59,9 +57,9 @@ const Bio = () => {
       <p>
         This website was programmed by <strong>{author.name}</strong>{" "}
         {author.summary}
-        {` `}
+        {`. `}
         <a href={`https://twitter.com/${social.twitter}`}>
-          You can follow her on Twitter
+          You can follow her on Twitter.
         </a>
       </p>
     </div>
