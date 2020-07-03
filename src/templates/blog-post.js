@@ -25,11 +25,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <p>{post.frontmatter.date}</p>
         </header>
         <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
-
+        <br />
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
       </article>
-      <Bio className="blog-post-bio" />
 
       <nav>
         <ul className="return-to-page">
@@ -49,6 +48,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
+      <Bio className="blog-post-bio" />
     </Layout>
   )
 }

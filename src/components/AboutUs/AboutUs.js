@@ -54,8 +54,6 @@ const AboutUs = () => {
           cooking blog?
         </p>
 
-        <br />
-
         <p>
           Besides this, Emma is declaring a major in Computer Science and
           decided to make the blog from scratch as a way to practice her Web

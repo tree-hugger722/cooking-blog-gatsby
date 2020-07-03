@@ -1,8 +1,10 @@
 .blog-previews {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-items: space-between;
+  margin: auto;
   width: 90%;
   font-family: "Nunito", sans-serif;
+  padding-top: 1em;
 }
 
 .blog-post-title {
@@ -12,4 +14,23 @@
 .blog-link {
   box-shadow: none;
   color: black;
+}
+
+.blog-post-image {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 7em;
+  height: 7em;
+  margin-right: 0.875rem;
+  margin-bottom: 0px;
+  margin-top: 0.875rem;
+  min-width: 50px;
+  border-radius: 50%;
+}
+
+.blog-preview-text {
+  display: block;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }

@@ -18,26 +18,31 @@ const BlogIndex = ({ data, location }) => {
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article className="blog-previews" key={node.fields.slug}>
-            <header>
-              <h3 className="blog-post-title">
-                <Link className="blog-link" to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <Img
-                sizes={node.frontmatter.featuredImage.childImageSharp.sizes}
-              />
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
+          <div className="blog-previews">
+            <Img
+              className="blog-post-image"
+              sizes={node.frontmatter.featuredImage.childImageSharp.sizes}
+            />
+            <article key={node.fields.slug}>
+              <div className="blog-preview-text">
+                <header>
+                  <h3 className="blog-post-title">
+                    <Link className="blog-link" to={node.fields.slug}>
+                      {title}
+                    </Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
+                </section>
+              </div>
+            </article>
+          </div>
         )
       })}
       <Bio />
