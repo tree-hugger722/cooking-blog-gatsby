@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -17,13 +18,16 @@ const BlogIndex = ({ data, location }) => {
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article className="site-text" key={node.fields.slug}>
+          <article className="blog-previews" key={node.fields.slug}>
             <header>
               <h3 className="blog-post-title">
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link className="blog-link" to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
+              <Img
+                sizes={node.frontmatter.featuredImage.childImageSharp.sizes}
+              />
               <small>{node.frontmatter.date}</small>
             </header>
             <section>
@@ -61,6 +65,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            featuredImage {
+              childImageSharp {
+                sizes(maxWidth: 630) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
         }
       }
