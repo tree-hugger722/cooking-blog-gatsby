@@ -6,7 +6,11 @@ import "./Header.css"
 
 const NavTab = ({ name, to }) => {
   return (
-    <Link className="nav-tab-text" to={to}>
+    <Link
+      activeClassName="nav-tab-text-active"
+      className="nav-tab-text"
+      to={to}
+    >
       {name}
     </Link>
   )

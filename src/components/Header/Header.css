@@ -46,6 +46,10 @@
   box-shadow: none;
 }
 
+.nav-tab-text-active {
+  font-weight: bold;
+}
+
 @media (max-width: 1118px) {
   #site-title,
   #nav-bar {
