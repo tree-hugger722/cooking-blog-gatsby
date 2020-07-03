@@ -1,3 +1,14 @@
 .blog-post-title {
   font-family: "Merriweather", "Georgia", serif;
 }
+
+.return-to-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}

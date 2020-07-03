@@ -19,26 +19,18 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article className="site-text">
-        <header>
+        <header className="blog-header">
           <h1 className="blog-post-title">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
 
-        <Bio />
+        <Bio className="blog-post-bio" />
       </article>
 
       <nav>
-        <ul
-        // style={{
-        //   display: `flex`,
-        //   flexWrap: `wrap`,
-        //   justifyContent: `space-between`,
-        //   listStyle: `none`,
-        //   padding: 0,
-        // }}
-        >
+        <ul className="return-to-page">
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
