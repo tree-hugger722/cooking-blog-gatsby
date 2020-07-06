@@ -24,7 +24,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <h1 className="blog-post-title">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
-        <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
+        <Img
+          className="featured-image"
+          sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
+        />
         <br />
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
