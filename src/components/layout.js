@@ -3,7 +3,7 @@ import React from "react"
 import Header from "./Header/Header"
 
 import Footer from "./Footer/Footer"
-import MainPhoto from "./HomeContent/MainPhoto"
+import MainPhoto from "./MainPhoto/MainPhoto"
 import PropTypes from "prop-types"
 
 const Layout = ({ location, children }) => {
