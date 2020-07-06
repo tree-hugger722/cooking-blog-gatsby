@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-import "../components/RecipeForm/RecipeForm.css"
+import "./styles.css"
 
 const SuggestRecipesPage = ({ location }) => {
   return (
@@ -17,9 +17,9 @@ const SuggestRecipesPage = ({ location }) => {
           src="https://docs.google.com/forms/d/e/1FAIpQLSdu6DgDnrNi8T9WKtTaOk6h_SyHiWjLg9DQdmaGj1sdXyuIFg/viewform?embedded=true"
           width="640"
           height="911"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
         >
           Loading…
         </iframe>
