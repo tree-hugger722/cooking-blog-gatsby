@@ -1,3 +1,10 @@
+.site-text {
+  font-family: "Nunito", sans-serif;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .blog-previews {
   display: flex;
   align-items: space-between;
@@ -9,6 +16,7 @@
 
 .blog-post-title {
   margin-top: 1em;
+  margin-bottom: 0;
 }
 
 .blog-link {
