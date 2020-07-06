@@ -9,7 +9,7 @@ module.exports = {
     description: `A cooking blog.`,
     siteUrl: `https://emma-neil.github.io/cooking-blog-gatsby/`,
     social: {
-      twitter: `eneil722`,
+      linkedin: `emma-neil-538891177`,
     },
   },
   plugins: [
@@ -82,7 +82,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Fredericka the Great", "Nunito"],
+          families: ["Fredericka the Great", "Nunito", "Merriweather"],
         },
       },
     },

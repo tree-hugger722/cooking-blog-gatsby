@@ -30,7 +30,7 @@ const Bio = () => {
             summary
           }
           social {
-            twitter
+            linkedin
           }
         }
       }
@@ -58,8 +58,8 @@ const Bio = () => {
         This website was programmed by <strong>{author.name}</strong>{" "}
         {author.summary}
         {`. `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You can connect with her on Twitter.
+        <a target="_blank" href={`https://linkedin.com/in/${social.linkedin}`}>
+          You can connect with her on LinkedIn.
         </a>
       </p>
     </div>
