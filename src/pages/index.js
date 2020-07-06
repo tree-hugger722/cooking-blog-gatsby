@@ -18,7 +18,7 @@ const BlogIndex = ({ data, location }) => {
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <div className="blog-previews">
+          <div className="blog-previews" key={title}>
             <Img
               className="blog-post-image"
               sizes={node.frontmatter.featuredImage.childImageSharp.sizes}
