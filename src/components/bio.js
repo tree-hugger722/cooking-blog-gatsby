@@ -55,10 +55,14 @@ const Bio = () => {
         }}
       />
       <p className="site-text">
-        This website was programmed by <strong>{author.name}</strong>{" "}
+        This website was developed by <strong>{author.name}</strong>{" "}
         {author.summary}
         {`. `}
-        <a target="_blank" href={`https://linkedin.com/in/${social.linkedin}`}>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={`https://linkedin.com/in/${social.linkedin}`}
+        >
           You can connect with her on LinkedIn.
         </a>
       </p>

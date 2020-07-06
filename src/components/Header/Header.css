@@ -47,7 +47,7 @@
 }
 
 .nav-tab-text-active {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 @media (max-width: 1118px) {

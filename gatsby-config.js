@@ -4,7 +4,7 @@ module.exports = {
     title: `Taste of CLE`,
     author: {
       name: `Emma Neil`,
-      summary: `who has spent quarantine cooking and coding in Shaker Heights`,
+      summary: `who has spent her quarantine cooking, coding, and learning in Shaker Heights, OH`,
     },
     description: `A cooking blog.`,
     siteUrl: `https://emma-neil.github.io/cooking-blog-gatsby/`,
