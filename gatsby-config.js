@@ -92,6 +92,9 @@ module.exports = {
     },
     {
       resolve: "gatsby-plugin-netlify-identity",
+      options: {
+        url: "https://tasteofclecooking.netlify.app/",
+      },
     },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
