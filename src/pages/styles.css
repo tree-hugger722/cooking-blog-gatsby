@@ -29,10 +29,10 @@
   display: inline-block;
   width: 7em;
   height: 7em;
+  min-width: 7em;
   margin-right: 0.875rem;
   margin-top: 0.875rem;
-
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 .blog-preview-text {
