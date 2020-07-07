@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: emma-neil/cooking-blog-gatsby
+  branch: master
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
@@ -8,15 +9,18 @@ backend:
     uploadMedia: "[skip ci] Upload “{{path}}”"
     deleteMedia: "[skip ci] Delete “{{path}}”"
 
-media_folder: src/Images
+media_folder: static/Images
 public_folder: /Images
 
 collections:
-  - name: blog
-    label: Blog
-    folder: src/templates/blog-post.js
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    media_folder: ""
+    public_folder: ""
+
     fields:
       - { name: "date", label: "Publish Date", widget: "datetime" }
       - { name: "title", label: "Title", widget: "string" }
