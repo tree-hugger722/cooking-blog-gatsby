@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import Login from "../components/Login/identity"
 import SEO from "../components/seo"
 
 import "./styles.css"
@@ -12,9 +11,9 @@ import "./styles.css"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-  window.netlifyIdentity = netlifyIdentity
-  // You must run this once before trying to interact with the widget
-  netlifyIdentity.init()
+  // window.netlifyIdentity = netlifyIdentity
+  // // You must run this once before trying to interact with the widget
+  // netlifyIdentity.init()
 
   return (
     <Layout location={location} title={siteTitle}>

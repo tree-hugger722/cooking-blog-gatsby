@@ -10,6 +10,8 @@ import Footer from "./Footer/Footer"
 import MainPhoto from "./MainPhoto/MainPhoto"
 import PropTypes from "prop-types"
 
+import "./layout.css"
+
 const Layout = ({ location, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const identity = useIdentityContext()
@@ -28,27 +30,25 @@ const Layout = ({ location, children }) => {
   return (
     <div>
       <div>
-        <nav style={{ background: "green" }}>
-          {" "}
-          Login Status:
+        <nav className="login-nav">
           <button className="btn" onClick={() => setDialog(true)}>
-            {isLoggedIn ? `Hello ${name}, Log out here!` : "LOG IN"}
+            {isLoggedIn ? `Hello ${name}, Log out here!` : "Log In"}
           </button>
         </nav>
-        <main>{children}</main>
+
         <IdentityModal
           showDialog={dialog}
           onCloseDialog={() => setDialog(false)}
         />
       </div>
-      <div>
+      <>
         <header>
           <Header />
           {location.pathname === rootPath && <MainPhoto />}
         </header>
         <main className="body">{children}</main>
         <Footer />
-      </div>
+      </>
     </div>
   )
 }
