@@ -2,7 +2,9 @@ import React from "react"
 import IdentityModal, {
   useIdentityContext,
 } from "react-netlify-identity-widget"
+
 import "react-netlify-identity-widget/styles.css" // delete if you want to bring your own CSS
+import "./identity.css"
 
 const Login = ({ children }) => {
   const identity = useIdentityContext()
@@ -18,11 +20,10 @@ const Login = ({ children }) => {
   const isLoggedIn = identity && identity.isLoggedIn
   return (
     <>
-      <nav style={{ background: "green" }}>
+      <nav style={{ background: "black" }}>
         {" "}
-        Login Status:
         <button className="btn" onClick={() => setDialog(true)}>
-          {isLoggedIn ? `Hello ${name}, Log out here!` : "LOG IN"}
+          {isLoggedIn ? `Hello ${name}, Log out here!` : "Log In"}
         </button>
       </nav>
       <main>{children}</main>
